@@ -1,0 +1,127 @@
+
+
+/* Media-quries */
+
+@media (max-width:600px ) {
+    
+    .navlist{
+        flex-direction: column;
+        position: absolute;
+        background: var(--white);
+        top: 15%;
+        left: 20%;
+        padding: 20px 150px;
+        z-index: 100;
+        transform: translateY(-400px);
+        transition: transform .3s ease-in-out;
+    }
+    .navlist li{
+        margin-bottom: 15px;
+    }
+    .navlist li a{
+        padding: 0;
+    }
+    header .button{
+        display: none;
+    }
+    .burger{
+        display: flex;
+        cursor: pointer;
+    }
+    .burger img{
+        width: 40px !important;
+    }
+    .active{
+        transform: translateY(0);
+    }
+    .showcase-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 0;
+    }
+    .showcase-container .showcase-text{
+        max-width: 100%;
+        margin: 40px 0px;
+        text-align: center;
+    }
+    .showcase-container .showcase-text p{
+        text-align: center;
+    }
+    .showcase-container .button{
+        margin: auto;
+    }
+    .showcase-container .showcase-img{
+        width: 100%;
+    }
+    .showcase-img img{
+        object-fit: contain;
+    }
+    .info-container{
+        padding: 0;
+    }
+    .info-container .info-header,
+    .info-container .info-header h3,
+    .info-container .info-header p,
+    .info-container .info-items,
+    .info-container .info-logo{
+        margin:0px  auto;
+        text-align: center;
+    }
+    .info-container .info-header h3{
+        padding: 30px 20px;
+        text-align: center;
+    }
+    .info-container .info-header p{
+        padding: 0px 10px;
+        line-height: 1.5;
+    }
+    .info-container .info-items p{
+        padding: 0px 10px;
+        line-height: 1.5;
+    }
+    .info-container .info-items{
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    .main-article{
+        padding: 0px 10px;
+    }
+    .article-heading h3{
+        font-size: 2.1rem;
+        text-align: center;
+        margin: 20px 0px;
+    }
+    .footer-container{
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .navlist{
+        left: 6%;
+    }
+    .showcase-container .showcase-text h2{
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+}
+@media (min-width:1400px) {
+    .showcase-img{
+        width: 50%;
+    }
+    .info-container .info-items{
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+    .card-container{
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+    .footer-container{
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+}
+
+/*x Media-quries x*/
